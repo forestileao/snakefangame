@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -39,8 +39,11 @@
 <body>
     <h2 id='score'>Score: 0</h2>
 
-    <!-- Script that contains the Snake Fangame  -->
-    <script src="./snake.js"></script>
+    <!-- Game logic (pure, unit tested) and browser entry point. Loaded as
+         classic scripts (not type="module") so the game keeps working when
+         this file is opened directly via a file:// URL. -->
+    <script src="./src/game.cjs"></script>
+    <script src="./src/main.js"></script>
 
     <h1>SNAKE GAME - Fangame By: P. F. Leão - Press arrow key (or touch) to play</h1>
 </body>
